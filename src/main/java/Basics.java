@@ -148,11 +148,15 @@ public class Basics {
          */
         StringBuilder ret = new StringBuilder();
 
-        String[] splited = to_split.split(" ");
+        String[] splited = to_split.split(" ", 7);
 
-        for (int i = 0; i <= 7; i++) {
-            ret.append(splited[i].charAt(0));
-        }
+        ret.append(splited[0].charAt(0));
+        ret.append(splited[1].charAt(0));
+        ret.append(splited[2].charAt(0));
+        ret.append(splited[3].charAt(0));
+        ret.append(splited[4].charAt(0));
+        ret.append(splited[5].charAt(0));
+        ret.append(splited[6].charAt(0));
 
         return ret.toString();
     }
